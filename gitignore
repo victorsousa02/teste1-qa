@@ -2,7 +2,3 @@ node_modules/
 cypress/videos/
 cypress/screenshots/
 mochawesome-report/
-cypress/pages/cadastroPage.js
-cypress/pages/loginPage.js
-cypress/e2e/createUser.cy.js
-cypress/e2e/login.cy.js

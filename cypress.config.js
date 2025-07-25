@@ -3,6 +3,7 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
+      return config;
     },
     screenshotOnRunFailure: true,
     specPattern: "cypress/e2e/**/*.cy.js",
@@ -15,7 +16,9 @@ module.exports = defineConfig({
     embeddedScreenshots: true,
     inlineAssets: true,
     saveAllAttempts: false,
-    overwrite: true,
-    reportDir: 'cypress/reports/mochawesome'
+    overwrite: false,
+    html: true,
+    json: true,
+    reportDir: 'cypress/reports/mochawesome-report'
   }
 });

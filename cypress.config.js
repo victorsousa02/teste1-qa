@@ -16,6 +16,6 @@ module.exports = defineConfig({
     inlineAssets: true,
     saveAllAttempts: false,
     overwrite: true,
-    reportDir: 'cypress/reports/mochawesome'
+    reportDir: 'cypress/reports/mochawesome-report'
   }
 });

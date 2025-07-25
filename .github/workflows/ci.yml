@@ -20,11 +20,11 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           install: true
-          runTests: true
+          runTests: false
       - name: Executar Cypress com Mochawesome
         run: npx cypress run
       - name: Salvar artefatos do relatório
         uses: actions/upload-artifact@v4
         with:
           name: mochawesome-report
-          path: mochawesome-report/
+          path: cypress/reports/mochawesome-report

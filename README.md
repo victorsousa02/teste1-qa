@@ -26,7 +26,11 @@ Instale as dependências:
 ```bash
 npm install
 ```
+Instale o Cypress :
 
+```bash
+npx cypress install
+```
 ---
 
 ## 🧪 Execução dos Testes
